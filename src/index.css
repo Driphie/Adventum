@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adventum S.A. Design System - Professional, Minimalist, Modern */
+
+@layer base {
+  :root {
+    /* Adventum Brand Colors */
+    --adventum-dark: 0 0% 9%; /* #171717 - Main background and navbar */
+    --adventum-gold: 36 15% 58%; /* #A89071 - Details and highlights */
+    --adventum-light: 40 4% 83%; /* #D5D4D3 - Light text and contrast */
+    
+    /* Design System Colors based on brand */
+    --background: 0 0% 9%; /* Dark theme primary */
+    --foreground: 40 4% 83%; /* Light text */
+
+    --card: 0 0% 12%; /* Slightly lighter than main background */
+    --card-foreground: 40 4% 83%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 40 4% 83%;
+
+    --primary: 36 15% 58%; /* Adventum gold */
+    --primary-foreground: 0 0% 9%; /* Dark text on gold */
+
+    --secondary: 0 0% 15%; /* Dark secondary */
+    --secondary-foreground: 40 4% 83%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 40 4% 65%;
+
+    --accent: 36 15% 58%; /* Gold accent */
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 40 4% 83%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 36 15% 58%;
+
+    --radius: 0.75rem;
+    
+    /* Custom Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--adventum-dark)) 0%, hsl(var(--adventum-dark) / 0.9) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(var(--adventum-dark)) 0%, hsl(var(--adventum-dark) / 0.95) 100%);
+    
+    /* Shadows with brand colors */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--adventum-dark) / 0.5);
+    --shadow-gold: 0 4px 20px hsl(var(--adventum-gold) / 0.2);
+    
+    /* Animation variables */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s ease-out;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-satoshi;
+  }
+}
+
+@layer components {
+  /* Professional animations */
+  .fade-in {
+    @apply animate-[fadeIn_0.8s_ease-out_forwards];
+  }
+  
+  .fade-up {
+    @apply animate-[fadeUp_0.8s_ease-out_forwards];
+  }
+  
+  .fade-down {
+    @apply animate-[fadeDown_0.8s_ease-out_forwards];
+  }
+  
+  .fade-left {
+    @apply animate-[fadeLeft_0.8s_ease-out_forwards];
+  }
+  
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-[var(--shadow-gold)];
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  /* Button variants */
+  .btn-adventum {
+    @apply bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-[var(--shadow-gold)] hover:transform hover:-translate-y-1;
+  }
+  
+  /* Section spacing */
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+  
+  /* Additional utility classes */
+  .bg-adventum-light {
+    background-color: hsl(var(--adventum-light));
+  }
+  
+  .text-adventum-gold {
+    color: hsl(var(--adventum-gold));
+  }
+}
