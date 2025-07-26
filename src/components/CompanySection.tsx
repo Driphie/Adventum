@@ -5,15 +5,15 @@ const CompanySection = () => {
         {/* Content - Left Half */}
         <div className="w-full lg:w-1/2 flex items-center px-6 sm:px-8 lg:pl-16 py-8 lg:py-0">
           <div className="fade-left max-w-xl mx-auto lg:mx-0">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
+            <h2 className="text-3xl md:text-3xl lg:text-7xl font-bold text-black mb-6">
               La Empresa
             </h2>
             
-            <h3 className="text-xl md:text-2xl text-adventum-gold font-medium mb-8">
+            <h3 className="text-xl md:text-3xl text-adventum-gold font-medium mb-8">
               "Espacios que suman calidad de vida"
             </h3>
             
-            <div className="space-y-6 text-black/80 text-lg leading-relaxed">
+            <div className="space-y-6 text-black/80 text-2xl leading-relaxed">
               <p>
                 <strong className="text-black">Diseño, calidad y bienestar en cada proyecto.</strong>
                 <br />

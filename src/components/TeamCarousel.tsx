@@ -8,16 +8,19 @@ const TeamCarousel = () => {
       name: "Luis Feld",
       role: "Presidente de Adventum",
       description: "Luis es un empresario emprendedor, con más de 30 años de experiencia en el desarrollo de negocios de inversión, caracterizado por su visión estratégica y capacidad para identificar oportunidades de crecimiento en el mercado inmobiliario.",
+      img: "/images/l1.png", // Reemplaza con la ruta de la imagen de Luis
     },
     {
       name: "Mariano Solowieiczyk",
       role: "Diseñador del proyecto",
       description: "Arquitecto recibido en 1999, desarrolló su carrera en reconocidos estudios de arquitectura, especializándose en proyectos residenciales de alta gama con enfoque en diseño sustentable y calidad de vida.",
+      img: "/images/m2.png", // Reemplaza con la ruta de la imagen de Mariano
     },
     {
       name: "Javier Vila",
       role: "Diseñador del proyecto",
       description: "Arquitecto egresado en 1995 de la Facultad de Arquitectura de la UBA, con amplia experiencia en desarrollos inmobiliarios y planificación urbana, destacándose por su enfoque innovador en espacios habitacionales.",
+      img: "/images/j3.png", // Reemplaza con la ruta de la imagen de Javier
     },
   ];
 
@@ -71,14 +74,12 @@ const TeamCarousel = () => {
                     <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                       {/* Photo */}
                       <div className="flex-shrink-0">
-                        <div className="w-40 h-40 md:w-48 md:h-48 bg-gradient-to-br from-primary/20 to-primary/40 rounded-full flex items-center justify-center shadow-lg">
-                          <div className="w-32 h-32 md:w-40 md:h-40 bg-primary/30 rounded-full flex items-center justify-center">
-                            <span className="text-foreground/70 text-sm text-center">
-                              Foto
-                              <br />
-                              {member.name.split(' ')[0]}
-                            </span>
-                          </div>
+                       <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary/20">
+                          <img
+                            src={member.img}
+                            alt={`Foto de ${member.name}`}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                       </div>
                       
