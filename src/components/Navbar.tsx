@@ -50,7 +50,7 @@ const Navbar = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-black hover:text-primary transition-colors duration-300 px-3 py-2 text-sm font-medium"
+                  className="text-black hover:text-primary transition-colors duration-300 px-3 py-2 text-xl font-medium"
                 >
                   {item.name}
                 </button>

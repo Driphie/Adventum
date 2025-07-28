@@ -62,9 +62,13 @@ const TeamCarousel = () => {
     <section id="equipo" className="section-padding bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 fade-up">
+          <div className="inline-block mb-4">
+            <span className="text-primary text-sm font-medium tracking-wider uppercase">Nuestro Equipo</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-7xl font-bold text-foreground mb-6 fade-up">
             Quiénes Somos
           </h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-16"></div>
         </div>
         
         <div className="relative">
@@ -91,13 +95,13 @@ const TeamCarousel = () => {
                       
                       {/* Content */}
                       <div className="flex-1 text-center lg:text-left">
-                        <h3 className="text-2xl md:text-3xl font-bold text-primary mb-3">
+                        <h3 className="text-2xl md:text-4xl font-bold text-primary mb-3">
                           {member.name}
                         </h3>
-                        <p className="text-lg md:text-xl text-muted-foreground font-medium mb-6">
+                        <p className="text-lg md:text-3xl text-muted-foreground font-medium mb-6">
                           {member.role}
                         </p>
-                        <p className="text-muted-foreground leading-relaxed text-lg mb-6">
+                        <p className="text-muted-foreground leading-relaxed text-2xl mb-6">
                           {member.description}
                         </p>
                         <Dialog>
@@ -107,14 +111,14 @@ const TeamCarousel = () => {
                               size="sm"
                               className="mt-2"
                             >
-                              Ver más
+                              Leer más
                             </Button>
                           </DialogTrigger>
                           <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
                             <DialogHeader>
-                              <div className="flex flex-col items-center space-y-4">
+                              <div className="flex flex-col items-center space-y-8">
                                 {/* Photo in modal */}
-                                <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg ring-4 ring-primary/20">
+                                <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg ring-4 ring-primary/60">
                                   <img
                                     src={member.img}
                                     alt={`Foto de ${member.name}`}
@@ -122,16 +126,16 @@ const TeamCarousel = () => {
                                   />
                                 </div>
                                 <div className="text-center">
-                                  <DialogTitle className="text-2xl font-bold text-primary mb-2">
+                                  <DialogTitle className="text-4xl font-bold text-primary mb-2">
                                     {member.name}
                                   </DialogTitle>
-                                  <p className="text-muted-foreground font-medium text-lg">
+                                  <p className="text-muted-foreground font-medium text-3xl">
                                     {member.role}
                                   </p>
                                 </div>
                               </div>
                             </DialogHeader>
-                            <div className="text-muted-foreground leading-relaxed text-justify space-y-4">
+                            <div className="text-muted-foreground leading-relaxed text-justify space-y-4 text-1xl">
                               {member.fullDescription.split('. ').map((paragraph, idx) => (
                             <p key={idx}>
                             {paragraph.trim()}{paragraph.endsWith('.') ? '' : '.'}

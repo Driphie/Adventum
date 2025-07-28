@@ -30,23 +30,30 @@ const CompanySection = () => {
                 con la naturaleza, el confort y la calidad de vida.
               </p>
             </div>
+          {/* Image on mobile - positioned after text */}
+            <div className="lg:hidden mt-8">
+              <div className="fade-up stagger-1">
+                <div className="relative overflow-hidden rounded-xl shadow-xl hover-lift h-64 w-full max-w-sm mx-auto">
+                  <img 
+                    src="/laempresa.png" 
+                    alt="La Empresa - Espacios arquitectónicos de calidad"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         
-        {/* Image - Right Half */}
-        <div className="w-full lg:w-1/2 py-8 lg:py-12 px-6 sm:px-8 lg:pr-16">
+        {/* Image - Right Half (Desktop only) */}
+        <div className="hidden lg:block w-full lg:w-1/2 py-8 lg:py-12 px-6 sm:px-8 lg:pr-16">
           <div className="fade-up stagger-1 h-full min-h-[400px] lg:min-h-auto">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl hover-lift h-full">
-              <div className="h-full bg-gradient-to-br from-slate-600 to-slate-800">
-                <div className="absolute inset-0 bg-primary/10"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-white/70 text-center px-8">
-                    imagen de adventum
-                    <br />
-                    <span className="text-sm">(Agregar)</span>
-                  </p>
-                </div>
-              </div>
+                            <img 
+                src="/laempresa.png" 
+                alt="La Empresa - Espacios arquitectónicos de calidad"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
           </div>
         </div>

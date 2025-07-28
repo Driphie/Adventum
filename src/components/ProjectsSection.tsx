@@ -27,7 +27,7 @@ const ProjectsSection = () => {
           <div className="inline-block mb-4">
             <span className="text-primary text-sm font-medium tracking-wider uppercase">Nuestro Trabajo</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 fade-up">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-6 fade-up">
             Proyectos
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-16"></div>
