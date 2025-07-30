@@ -2,8 +2,8 @@ import { MessageCircle } from "lucide-react";
 
 const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "541123482822";
-    const message = "mensaje de prueba";
+    const phoneNumber = "541124681383";
+    const message = "Buenas vengo desde la pagina web de ADVENTUM y queria informarme acerca del proyecto.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

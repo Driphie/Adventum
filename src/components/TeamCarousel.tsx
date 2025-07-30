@@ -12,21 +12,21 @@ const TeamCarousel = () => {
       role: "Presidente de Adventum",
       description: "Luis es un empresario emprendedor, con más de 30 años de experiencia en el desarrollo de negocios de inversión, caracterizado por su visión estratégica y capacidad para identificar oportunidades de crecimiento en el mercado inmobiliario.",
       fullDescription: "Luis es un empresario emprendedor, con más de 30 años de experiencia en el desarrollo de negocios de inversión en el mercado nacional e internacional. Con una visión innovadora y creativa, desarrolló negocios agroindustriales e inmobiliarios. Como líder de proyectos, ha sabido conjugar exitosamente, el talento para los negocios, con la formación y el liderazgo de los equipos profesionales que lo acompañan, sin perder de vista las virtudes y los valores éticos.",
-      img: "/images/l1.png", // Reemplaza con la ruta de la imagen de Luis
+      img: "/images/l2.JPG", // Reemplaza con la ruta de la imagen de Luis
     },
     {
       name: "Mariano Solowieiczyk",
       role: "Diseñador del proyecto",
       description: "Arquitecto recibido en 1999, desarrolló su carrera en reconocidos estudios de arquitectura, especializándose en proyectos residenciales de alta gama con enfoque en diseño sustentable y calidad de vida.",
       fullDescription: "Arquitecto recibido en 1999, desarrolló su carrera en reconocidos estudios de arquitectura, entre ellos VSV. Entre 1998 y 2006 fue docente en la Facultad de Arquitectura de la UBA. En 2005 abrió su propia oficina, donde comenzó a desarrollar sus primeros edificios de viviendas. En 2008 y 2009 realizó posgrados en Gestión de Activos Inmobiliarios en la Universidad Torcuato Di Tella, Dirección de Empresas de Arquitectura y Construcción en ESEADE, y Diseño Sustentable en la Universidad de Palermo. En 2010 fundó el estudio VS Arquitectos.",
-      img: "/images/m2.png", // Reemplaza con la ruta de la imagen de Mariano
+      img: "/images/m3.JPG", // Reemplaza con la ruta de la imagen de Mariano
     },
     {
       name: "Javier Vila",
       role: "Diseñador del proyecto",
       description: "Arquitecto egresado en 1995 de la Facultad de Arquitectura de la UBA, con amplia experiencia en desarrollos inmobiliarios y planificación urbana, destacándose por su enfoque innovador en espacios habitacionales.",
       fullDescription: "Arquitecto egresado en 1995 de la Facultad de Arquitectura de la Universidad de Buenos Aires, fundó el estudio Vila Sebastian Vila & Asociados, dedicado a proyectos de diversas escalas. Entre 1994 y 1995 se desempeñó como docente en la Facultad de Arquitectura de la UBA. En 1998 recibió el Premio Vitruvio a la Arquitectura Emergente, otorgado por el Consejo Profesional de Arquitectura y Urbanismo y el Museo Nacional de Bellas Artes. En 2010 cofundó el estudio VS Arquitectos.",
-      img: "/images/j3.png", // Reemplaza con la ruta de la imagen de Javier
+      img: "/images/m4.JPG", // Reemplaza con la ruta de la imagen de Javier
     },
   ];
 
