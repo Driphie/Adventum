@@ -11,7 +11,7 @@ const WhatsAppFloat = () => {
   return (
     <div className="fixed bottom-6 right-6 z-[9999]">
       {/* Pulse animation background */}
-      <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-75 pointer-events-none"></div>
+      <div className=""></div>
       
       {/* WhatsApp button */}
       <button

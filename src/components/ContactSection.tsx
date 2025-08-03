@@ -151,7 +151,7 @@ const ContactSection = () => {
                   required
                   rows={6}
                   className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground resize-none transition-colors duration-300"
-                  placeholder="Cuéntanos sobre tu proyecto o consulta..."
+                  placeholder="Cuéntanos sobre tu consulta..."
                 />
               </div>
               
