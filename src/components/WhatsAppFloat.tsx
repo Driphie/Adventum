@@ -1,28 +1,36 @@
-import { MessageCircle } from "lucide-react";
+const whatsappLogo = "/images/wp.png";
 
 const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "541124681383";
-    const message = "Buenas vengo desde la pagina web de ADVENTUM y queria informarme acerca del proyecto.";
+    const phoneNumber = "541123482822";
+    const message = "mensaje de prueba";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   return (
     <div className="fixed bottom-6 right-6 z-[9999]">
-      {/* Pulse animation background */}
+      {/* Pulse animation background with gradient */}
       <div className=""></div>
       
-      {/* WhatsApp button */}
+      {/* Outer glow ring */}
+      <div className=""></div>
+      
+      {/* WhatsApp button with enhanced design */}
       <button
         onClick={handleWhatsAppClick}
-        className="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer z-10"
+        className=""
         aria-label="Contactar por WhatsApp"
         type="button"
       >
-        <MessageCircle 
-          size={28} 
-          className="transition-transform duration-300 hover:rotate-12"
+        {/* Inner highlight */}
+        <div className="absolute inset-1 bg-gradient-to-t from-transparent to-white/30 rounded-full pointer-events-none"></div>
+        
+        <img 
+          src={whatsappLogo} 
+          alt="WhatsApp Logo"
+          className="w-20 h-20 transition-transform duration-300 hover:rotate-12 relative z-10 drop-shadow-lg"
+          key="whatsapp-logo-enhanced"
         />
       </button>
     </div>
