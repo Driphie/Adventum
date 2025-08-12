@@ -23,13 +23,6 @@ const HeroSection = () => {
         <p className="text-xl md:text-2xl lg:text-3xl text-adventum-light font-light max-w-4xl mx-auto">
         </p>
       </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30">
-        <div className="w-1 h-12 bg-white/30 rounded-full">
-          <div className="w-1 h-4 bg-primary rounded-full animate-bounce"></div>
-        </div>
-      </div>
     </section>
   );
 };
