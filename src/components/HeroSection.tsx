@@ -1,9 +1,9 @@
 const HeroSection = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden mt-16 lg:mt-24">
       {/* Video Background */}
       <video 
-        className="absolute inset-0 w-full h-full object-cover z-10"
+        className="absolute inset-0 w-full h-full object-contain md:object-cover z-10"
         controls
         autoPlay  
         playsInline
